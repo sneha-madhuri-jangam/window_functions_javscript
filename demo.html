@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function windows1(){
+        var h=document.getElementById("one")
+
+        alert("hello sneha");
+
+
+    }
+
+    function windows2(){
+        // var h=document.getElementById("t2")
+
+        var a=confirm("are you happy ");
+        if(a==true){
+            alert("ok");
+        }else{
+            alert("cancel");
+        }
+
+
+    }
+
+
+    function windows3(){
+        // var h=document.getElementById("t2")
+
+        var a=prompt("hello enter name");
+        alert("i am " +a);
+
+
+    }
+    function windows5(){  
+open("http://www.javatpoint.com");  
+}  
+
+function windows4(){  
+// open("http://www.javatpoint.com");  
+
+    setTimeout(
+        function()
+{
+    alert("this is set time out ");
+},2000);
+
+
+
+}  
+</script>
+
+<body>
+   
+   
+    <input type="button" name="one" value="alert_window" onclick="windows1()" >
+    <input type="button" name="t2" value="confrirm" onclick="windows2()" >
+    <input type="button" name="three" value="prompt" onclick="windows3()" >
+    <input type="button" name="four" value="set_time_out" onclick="windows4()" >
+    <input type="button" name="one" value="open" onclick="windows5()" >
+<!-- <input type="button" name="one" value="" onclick="windows()" > -->
+
+    
+</body>
+
+</html>
